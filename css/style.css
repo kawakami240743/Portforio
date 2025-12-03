@@ -89,7 +89,7 @@ h3 {
     /* Navbar height */
     text-align: center;
     /* Center text */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/hero.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://kawakami240743.github.io/Portfolio/Assets/BackGround.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
