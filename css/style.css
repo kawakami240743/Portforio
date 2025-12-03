@@ -271,7 +271,10 @@ h2 {
         align-items: flex-start; /* アイコンとテキストの上端を揃える */
         /* 【変更】gap: 4rem; から gap: 6rem; に変更し、間隔を広げる */
         gap: 6rem; 
-        max-width: 1000px; /* PCでの最大幅を広げる */
+        /* 【変更】最大幅を広げ、中央寄せをやめる。これにより、より右側に寄るスペースが生まれる */
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: 0;
     }
 
     /* 【新規追加】PCでのプロフィールアイコンのサイズを大きくする */
@@ -280,6 +283,8 @@ h2 {
         height: 160px;
         order: 2; /* 順序を2にして右側に移動 */
         margin-bottom: 0;
+        /* 【新規追加】アイコンを右端に寄せるためにmargin-left: auto; を追加 */
+        margin-left: auto; 
         /* テキストとアイコンの比率を調整 */
         flex-shrink: 0;
     }
