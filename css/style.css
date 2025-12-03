@@ -81,15 +81,14 @@ margin-bottom: 1rem;
 
 /* Hero Section /
 .hero-section {
-/ 100vhを維持しつつ、コンテンツをセンタリング /
+/ 垂直・水平方向の中央揃えは既にOK */
 height: 100vh;
 display: flex;
 align-items: center;
 justify-content: center;
-padding: 0 5%; / パディングを相対値に /
+padding: 0 5%;
 padding-top: 60px;
 text-align: center;
-/ 背景画像 (BackGround.png) のパスをAssets/BackGround.pngに修正 */
 background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://www.google.com/search?q=https://kawakami240743.github.io/Portfolio/Assets/BackGround.png');
 background-size: cover;
 background-position: center;
@@ -99,7 +98,10 @@ background-attachment: fixed;
 .hero-content {
 max-width: 800px;
 z-index: 1;
-width: 100%; /* 相対的な幅を使用 */
+width: 100%;
+/* ★修正点: コンテンツ内の要素を中央に寄せる */
+text-align: center;
+margin: 0 auto;
 }
 
 .hero-logo {
@@ -111,6 +113,7 @@ border-radius: 50%;
 border: 3px solid var(--highlight-color);
 box-shadow: 0 0 20px rgba(76, 150, 156, 0.5);
 animation: float 6s ease-in-out infinite;
+/* ロゴがimgタグなので、margin-left/right: auto; は不要。text-align: center; で中央寄せされます。*/
 }
 
 @keyframes float {
@@ -130,7 +133,6 @@ transform: translateY(0px);
 }
 
 .hero-content h1 {
-/* デスクトップ用サイズ */
 font-size: 3.5rem;
 line-height: 1.2;
 margin-bottom: 1rem;
@@ -143,13 +145,12 @@ color: var(--highlight-color);
 
 .typing-effect {
 font-family: var(--font-code);
-/* デスクトップ用サイズ /
 font-size: 1.5rem;
 margin-bottom: 2rem;
 color: #fff;
 text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
 }
-/ main.jsと連携するためのカーソルスタイル */
+/* main.jsと連携するためのカーソルスタイル */
 .typing-effect .cursor {
 display: inline-block;
 opacity: 1;
@@ -182,7 +183,8 @@ background-color: #3a7a80;
 font-size: 1.1rem;
 max-width: 800px;
 color: #ddd;
-margin: 0 auto; / 中央揃えをサポート */
+margin: 0 auto;
+text-align: left; / デフォルトのAboutは左寄せに戻します */
 }
 
 .about-content p {
@@ -249,6 +251,7 @@ color: #ccc;
 display: flex;
 gap: 0.5rem;
 flex-wrap: wrap;
+justify-content: flex-start; /* プロジェクトカード内は左寄せを維持 */
 }
 
 .tags span {
@@ -347,7 +350,7 @@ display: none;
 /* Hero Section: フォントサイズを小さく */
 .hero-content h1 {
     font-size: 2.2rem;
-    word-break: keep-all; /* 単語の途中で改行しないように */
+    word-break: keep-all;
 }
 
 .hero-logo {
