@@ -20,7 +20,7 @@
  * 最小値を 10px に変更。
  */
 html {
-    font-size: calc(10.5px + 0.4vw); 
+    font-size: calc(10px + 0.4vw); 
 }
 
 body {
@@ -65,8 +65,20 @@ ul {
 
 .nav-links {
     display: flex;
-    gap: 2rem;
+    gap: 0; /* gapを0にして、代わりにliのpaddingとborderで間隔を制御 */
 }
+
+/* 【新規追加】ナビゲーションリンク間に区切り線を追加 */
+.nav-links li {
+    padding: 0 1rem; /* リンク間のスペースを制御 */
+    border-right: 1px solid var(--surface-color); /* 区切り線 */
+}
+
+/* 【新規追加】最後のリンクの区切り線を削除 */
+.nav-links li:last-child {
+    border-right: none;
+}
+/* -------------------------------------- */
 
 .nav-links a:hover {
     color: var(--highlight-color);
