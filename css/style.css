@@ -222,30 +222,34 @@ h2 {
     border-bottom: 2px solid var(--surface-color); /* 下線で区切り感を出す */
 }
 
+/* 【変更】skills-listをulの箇条書きスタイルに変更 */
 .skills-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0;
+    /* display: flex; REMOVED */
+    list-style: disc; /* 標準の黒丸を使用 */
     margin-bottom: 2rem;
     font-family: var(--font-code);
     font-size: 1rem;
     color: var(--accent-color);
     background-color: var(--surface-color);
-    padding: 1rem;
+    padding: 1.5rem 2rem; /* paddingを調整 */
+    padding-left: 3rem; /* 箇条書きのために左のパディングを増やす */
     border-radius: 8px;
-    border: 1px solid #444;
+    border: 1px solid var(--highlight-color); /* borderをハイライトカラーにしてクール感を出す */
 }
 
-.skills-list span {
-    display: inline-block;
-    padding: 0 1rem;
-    border-right: 1px solid var(--bg-color); /* 区切り線 */
-    line-height: 1; /* 行の高さを調整 */
+.skills-list li {
+    margin-bottom: 0.5rem; /* 各項目の間にスペース */
+    /* border-right: none; REMOVED */
+    /* padding: 0; ADJUSTED below */
+    padding-left: 0.5rem; /* 箇条書きのインデントを調整 */
 }
 
+/* .skills-list li:last-child {
+    margin-bottom: 0;
+}
 .skills-list span:last-child {
     border-right: none;
-}
+} */
 /* -------------------------------------- */
 
 
