@@ -99,6 +99,8 @@ h2,
 h3 {
     color: var(--accent-color);
     margin-bottom: 1rem;
+    /* 【修正】セクション見出しを中央寄せにする */
+    text-align: center;
 }
 
 /* 【変更点2】h2の見出しサイズを大きくしてメリハリをつける */
@@ -207,37 +209,17 @@ h2 {
     font-size: 1rem;
     max-width: 800px;
     color: #ddd;
-    /* 【削除】PC向け Flexbox設定は不要になったため削除 */
-    /* display: flex; REMOVED */
-    /* flex-direction: column; REMOVED */
-    align-items: center; /* 中央寄せ */
-    /* gap: 2rem; REMOVED */
-    margin: 0 auto; /* 中央寄せ */
+    /* 【修正】コンテンツ全体を中央寄せにする */
+    text-align: center;
+    margin: 0 auto; /* 中央寄せを維持 */
 }
-
-/* 【削除】プロフィールアイコンのスタイルを削除 */
-/*
-.profile-icon {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%; 
-    object-fit: cover;
-    border: 3px solid var(--highlight-color);
-    box-shadow: 0 0 15px rgba(76, 150, 156, 0.5);
-    margin-bottom: 2rem;
-}
-*/
-
-/* 【削除】テキストコンテンツのラッパースタイルを削除 */
-/*
-.about-text-content {
-    width: 100%;
-}
-*/
 
 
 .about-content p {
     margin-bottom: 1rem;
+    /* 【修正】中央寄せでも行が長くなりすぎないよう幅を狭くする */
+    max-width: 600px;
+    margin: 0.5rem auto 1rem auto; /* 中央寄せ */
 }
 
 /* 【新規追加】技術スタックのタイトルとリストのスタイル */
@@ -248,6 +230,8 @@ h2 {
     margin-bottom: 1rem;
     padding-bottom: 0.5rem;
     border-bottom: 2px solid var(--surface-color); /* 下線で区切り感を出す */
+    /* 【修正】タイトルも中央寄せにする */
+    text-align: center; 
 }
 
 /* 【変更】skills-listをulの箇条書きスタイルに変更 */
@@ -262,6 +246,12 @@ h2 {
     padding-left: 3rem; /* 箇条書きのために左のパディングを増やす */
     border-radius: 8px;
     border: 1px solid var(--highlight-color); /* borderをハイライトカラーにしてクール感を出す */
+    
+    /* 【修正】リストボックス自体を中央寄せにする */
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
+    /* 【修正】中央寄せにしたので、リストアイテムを左寄せに戻す */
+    text-align: left;
 }
 
 .skills-list li {
@@ -270,6 +260,7 @@ h2 {
 }
 
 /* 【削除】PCモードでのアイコン配置/FlexboxのMedia Queryを削除 */
+/* Media Query: PC/タブレットサイズ (769px以上) */
 /*
 @media (min-width: 769px) {
     .about-content {
