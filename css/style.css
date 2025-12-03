@@ -15,18 +15,12 @@
     box-sizing: border-box;
 }
 
-/* * 【変更点】
- * htmlの基本フォントサイズを定義し、ビューポート幅(vw)に連動させる。
- * calc(最小px + 可変vw) を使用し、可読性を維持しつつレスポンシブに対応。
- * これにより、既存の全てのrem単位が画面サイズに連動して変動する。
+/* * 【変更点1】
+ * htmlの基本フォントサイズを調整し、全体的にやや小さく、レスポンシブなサイズ感に調整。
+ * (最小16px + 画面幅の0.3vw) に変更
  */
 html {
-    /* 画面幅に応じてフォントサイズを調整 (例: 最小16px + 画面幅の0.5%) */
-    font-size: calc(16px + 0.5vw); 
-
-    /* 補足: 完全にvwのみで制御する場合は以下を使用します
-       font-size: 1vw; 
-    */
+    font-size: calc(16px + 0.3vw); 
 }
 
 body {
@@ -64,7 +58,8 @@ ul {
 .logo {
     font-family: var(--font-code);
     font-weight: 700;
-    font-size: 1.2rem;
+    /* 1.2remから1.1remに微調整 */
+    font-size: 1.1rem; 
     color: var(--highlight-color);
 }
 
@@ -91,6 +86,12 @@ h3 {
     margin-bottom: 1rem;
 }
 
+/* 【変更点2】h2の見出しサイズを大きくしてメリハリをつける */
+h2 {
+    font-size: 2.5rem; 
+}
+
+
 /* Hero Section */
 .hero-section {
     height: 100vh;
@@ -103,7 +104,6 @@ h3 {
     /* Navbar height */
     text-align: center;
     /* Center text */
-    /* 【変更点】GitHubのURLから背景画像をロードするように変更 */
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://kawakami240743.github.io/Portfolio/Assets/BackGround.png');
     background-size: cover;
     background-position: center;
@@ -142,8 +142,10 @@ h3 {
     }
 }
 
+/* 【変更点3】ヒーローセクションh1のサイズを縮小 */
 .hero-content h1 {
-    font-size: 3.5rem;
+    /* 3.5remから2.8remに縮小 */
+    font-size: 2.8rem;
     line-height: 1.2;
     margin-bottom: 1rem;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
@@ -153,10 +155,11 @@ h3 {
     color: var(--highlight-color);
 }
 
+/* 【変更点4】タイピングエフェクトのテキストサイズを縮小 */
 .typing-effect {
     font-family: var(--font-code);
-    font-size: 1.5rem;
-    /* Slightly larger */
+    /* 1.5remから1.2remに縮小 */
+    font-size: 1.2rem;
     margin-bottom: 2rem;
     color: #fff;
     /* White text for better contrast */
@@ -165,7 +168,8 @@ h3 {
 
 .cta-button {
     display: inline-block;
-    padding: 0.8rem 2rem;
+    /* 0.8rem 2rem から 0.7rem 1.8remに微調整 */
+    padding: 0.7rem 1.8rem;
     background-color: var(--highlight-color);
     color: #fff;
     border-radius: 4px;
@@ -183,7 +187,8 @@ h3 {
 
 /* About Section */
 .about-content {
-    font-size: 1.1rem;
+    /* 1.1remから1remに微調整 */
+    font-size: 1rem;
     max-width: 800px;
     color: #ddd;
 }
@@ -213,7 +218,8 @@ h3 {
 }
 
 .skill-card h3 {
-    font-size: 1.1rem;
+    /* 1.1remから1remに微調整 */
+    font-size: 1rem;
     margin-bottom: 0.5rem;
     color: var(--text-color);
 }
@@ -270,7 +276,8 @@ h3 {
 }
 
 .project-info p {
-    font-size: 0.95rem;
+    /* 0.95remから0.9remに微調整 */
+    font-size: 0.9rem;
     margin-bottom: 1rem;
     color: #ccc;
 }
@@ -286,7 +293,8 @@ h3 {
     color: var(--highlight-color);
     padding: 0.2rem 0.6rem;
     border-radius: 4px;
-    font-size: 0.8rem;
+    /* 0.8remから0.75remに微調整 */
+    font-size: 0.75rem;
     font-family: var(--font-code);
     border: 1px solid #444;
 }
@@ -301,8 +309,9 @@ h3 {
 }
 
 .contact-container p {
+    /* 1.2remから1remに微調整 */
+    font-size: 1rem;
     margin-bottom: 2rem;
-    font-size: 1.2rem;
 }
 
 .social-links {
@@ -327,7 +336,8 @@ footer {
     padding: 2rem;
     background-color: #1a1a1a;
     color: #666;
-    font-size: 0.9rem;
+    /* 0.9remから0.8remに微調整 */
+    font-size: 0.8rem;
     border-top: 1px solid #333;
 }
 
@@ -374,7 +384,8 @@ footer {
 }
 
 .project-header h1 {
-    font-size: 2.5rem;
+    /* 2.5remから2remに縮小 */
+    font-size: 2rem;
     color: var(--highlight-color);
 }
 
@@ -403,7 +414,8 @@ footer {
 .project-description p,
 .project-description li {
     color: #ccc;
-    font-size: 1.1rem;
+    /* 1.1remから1remに微調整 */
+    font-size: 1rem;
     margin-bottom: 1rem;
 }
 
