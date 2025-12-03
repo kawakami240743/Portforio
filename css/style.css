@@ -361,6 +361,8 @@ h2 {
 
 .project-info h3 {
     color: var(--accent-color);
+    /* 【修正】h3(作品名)も中央寄せにする */
+    text-align: center;
     margin-bottom: 0.5rem;
 }
 
@@ -369,12 +371,16 @@ h2 {
     font-size: 0.9rem;
     margin-bottom: 1rem;
     color: #ccc;
+    /* 【修正】p(説明文)も中央寄せにする */
+    text-align: center;
 }
 
 .tags {
     display: flex;
     gap: 0.5rem;
     flex-wrap: wrap;
+    /* 【修正5】タグを中央寄せにする */
+    justify-content: center;
 }
 
 .tags span {
