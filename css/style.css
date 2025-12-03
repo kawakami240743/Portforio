@@ -409,6 +409,9 @@ h2 {
     background-color: var(--surface-color);
     border-radius: 8px;
     border: 1px solid #444;
+    /* 【新規追加】コンテナ自体を中央寄せにする */
+    max-width: 600px; 
+    margin: 0 auto;
 }
 
 .contact-container p {
