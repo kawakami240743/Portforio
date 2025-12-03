@@ -55,7 +55,7 @@ border-bottom: 1px solid var(--surface-color);
 .logo {
 font-family: var(--font-code);
 font-weight: 700;
-font-size: 1.5rem; /* remで相対的なサイズに */
+font-size: 1.8rem; /* ★修正: 1.5rem -> 1.8rem に拡大 */
 color: var(--highlight-color);
 }
 
@@ -136,7 +136,7 @@ transform: translateY(0px);
 }
 
 .hero-content h1 {
-font-size: 3.5rem; /* PC基準サイズ */
+font-size: 4rem; /* ★修正: 3.5rem -> 4rem に拡大 */
 line-height: 1.2;
 margin-bottom: 1rem;
 text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
@@ -148,7 +148,7 @@ color: var(--highlight-color);
 
 .typing-effect {
 font-family: var(--font-code);
-font-size: 1.5rem; /* PC基準サイズ /
+font-size: 1.8rem; /* ★修正: 1.5rem -> 1.8rem に拡大 /
 margin-bottom: 2rem;
 color: #fff;
 text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
@@ -354,9 +354,14 @@ body {
 font-size: 0.9375rem; / 15px */
 }
 
-/* Hero Section: フォントサイズを調整 (3.5rem -> 3rem) */
+/* Hero Section: フォントサイズを調整 (4rem -> 3.2rem) */
 .hero-content h1 {
-    font-size: 3rem;
+    font-size: 3.2rem; /* PCより少し小さいサイズ */
+}
+
+/* Navbarロゴは維持 */
+.logo {
+    font-size: 1.5rem; /* 1.8rem -> 1.5rem に戻す */
 }
 
 .typing-effect {
@@ -393,10 +398,14 @@ font-size: 0.875rem; / 14px */
     padding: 1rem 1rem;
 }
 
-/* Hero Section: フォントサイズをさらに小さく (3.5rem -> 2.2rem) */
+/* Navbarロゴはさらに小さく */
+.logo {
+    font-size: 1.3rem;
+}
+
+/* Hero Section: フォントサイズをさらに小さく (4rem -> 2.4rem) */
 .hero-content h1 {
-    font-size: 2.2rem; 
-    /* 文字が小さくなるため、折り返しは許容しつつ、体裁を維持 */
+    font-size: 2.4rem; /* 小さくしつつ、視認性を維持 */
     word-break: keep-all; 
 }
 
