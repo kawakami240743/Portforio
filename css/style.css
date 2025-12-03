@@ -65,10 +65,11 @@ gap: 2rem;
 color: var(--highlight-color);
 }
 
-/* Sections */
+/* Sections /
 .section {
 padding: 4rem 2rem;
 max-width: 1200px;
+/ セクション全体を中央寄せ */
 margin: 0 auto;
 }
 
@@ -81,16 +82,14 @@ margin-bottom: 1rem;
 
 /* Hero Section /
 .hero-section {
-/ 垂直・水平方向の中央揃えは既にOK /
 height: 100vh;
 display: flex;
 align-items: center;
 justify-content: center;
-padding: 0 5%; / パディングを相対値に /
+padding: 0 5%;
 padding-top: 60px;
-/ text-align: center; を維持 */
-text-align: center;
-background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://www.google.com/url?sa=E&source=gmail&q=https://kawakami240743.github.io/Portfolio/Assets/BackGround.png');
+text-align: center; / コンテンツ内のインライン要素を中央寄せ */
+background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://www.google.com/search?q=https://kawakami240743.github.io/Portfolio/Assets/BackGround.png');
 background-size: cover;
 background-position: center;
 background-attachment: fixed;
@@ -100,9 +99,9 @@ background-attachment: fixed;
 max-width: 800px;
 z-index: 1;
 width: 100%;
-/* コンテンツ内の要素を中央に寄せる（念のため再確認） */
-text-align: center;
+/* Flexboxで中央寄せされているため、margin: 0 auto; は必須ではないが、念のため残す */
 margin: 0 auto;
+text-align: center;
 }
 
 .hero-logo {
@@ -178,12 +177,12 @@ transform: translateY(-2px);
 background-color: #3a7a80;
 }
 
-/* About Section */
+/* About Section /
 .about-content {
 font-size: 1.1rem;
 max-width: 800px;
 color: #ddd;
-margin: 0 auto;
+margin: 0 auto; / 中央寄せを確保 */
 text-align: left;
 }
 
@@ -264,13 +263,16 @@ font-family: var(--font-code);
 border: 1px solid #444;
 }
 
-/* Contact Section */
+/* Contact Section /
 .contact-container {
 text-align: center;
 padding: 2rem;
 background-color: var(--surface-color);
 border-radius: 8px;
 border: 1px solid #444;
+/ 中央寄せを確保 */
+margin: 0 auto;
+max-width: 600px;
 }
 
 .contact-container p {
@@ -281,7 +283,7 @@ font-size: 1.2rem;
 .social-links {
 margin-top: 2rem;
 display: flex;
-justify-content: center;
+justify-content: center; /* リンク群を中央寄せ */
 gap: 2rem;
 }
 
@@ -349,18 +351,18 @@ display: none;
 
 /* Hero Section: フォントサイズを小さく */
 .hero-content h1 {
-    font-size: 2.2rem;
+    font-size: 2rem; /* さらに小さく調整 */
     word-break: keep-all;
 }
 
 .hero-logo {
-    width: 100px;
-    height: 100px;
+    width: 80px; /* さらに小さく調整 */
+    height: 80px;
     margin-bottom: 1rem;
 }
 
 .typing-effect {
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 /* Sections: パディングをタイトに */
