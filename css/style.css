@@ -24,7 +24,7 @@ font-family: var(--font-main);
 line-height: 1.6;
 overflow-x: hidden;
 /* PC (1025px以上) の基準サイズ */
-font-size: 16px;
+font-size: 100px;
 }
 
 a {
