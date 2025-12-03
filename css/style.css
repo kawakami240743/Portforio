@@ -15,6 +15,20 @@
     box-sizing: border-box;
 }
 
+/* * 【変更点】
+ * htmlの基本フォントサイズを定義し、ビューポート幅(vw)に連動させる。
+ * calc(最小px + 可変vw) を使用し、可読性を維持しつつレスポンシブに対応。
+ * これにより、既存の全てのrem単位が画面サイズに連動して変動する。
+ */
+html {
+    /* 画面幅に応じてフォントサイズを調整 (例: 最小16px + 画面幅の0.5%) */
+    font-size: calc(16px + 0.5vw); 
+
+    /* 補足: 完全にvwのみで制御する場合は以下を使用します
+       font-size: 1vw; 
+    */
+}
+
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
@@ -89,6 +103,7 @@ h3 {
     /* Navbar height */
     text-align: center;
     /* Center text */
+    /* 【変更点】GitHubのURLから背景画像をロードするように変更 */
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://kawakami240743.github.io/Portfolio/Assets/BackGround.png');
     background-size: cover;
     background-position: center;
