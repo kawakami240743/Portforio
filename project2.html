@@ -52,36 +52,38 @@
                     <p>
                         本プロジェクトは、スマートフォン向けに制作した3Dアクションゲームです。
                         プレイヤーは小さな魚を操作し、海中を自由に泳ぎながらより小さな魚を捕食してスコアを稼ぎます。
-                        しかし、大きな魚に近づきすぎるとゲームオーバーとなるため、リスク管理と素早い判断が求められます。
+                        大きな魚に近づきすぎるとゲームオーバーとなるため、リスク管理と素早い判断が求められます。
                         スマートフォンでも直感的に遊べるシンプルさと、成長による楽しさを両立したゲーム体験を目的としています。
                     </p>
 
                     <h2>主な役割と技術</h2>
                     <ul>
-                        <li>**VRインタラクション**: Oculus Integration SDKを使用したコントローラー入力と、直感的なハンドトラッキング操作の実装。</li>
-                        <li>**物理エンジン**: 宇宙船の慣性と推進力、被弾時の挙動を再現する物理シミュレーションの実装。</li>
-                        <li>**最適化**: VR環境特有の厳しいパフォーマンス要件に対応するためのドローコール削減、バッチ処理、ライトベイクの徹底。</li>
+                        <li><strong>ゲームプレイプログラミング</strong>: スマートフォン向け3D環境でのタッチ操作、敵AI（追跡・パトロール）、当たり判定、スコアや成長システムなど、ゲームサイクルに関わる主要な機能を実装。</li>              
+                        <li><strong>開発環境</strong>: Unityの3D機能を中心に、タッチ操作対応・実機テスト（Xcode）を行い、スマートフォンでも快適に遊べる操作性と動作を構築。</li>                 
+                        <li><strong>制作背景</strong>: スマートフォン向け3Dアクションの制作を通じて、アニメーション制御、敵挙動、UI設計など、モバイルゲーム開発に必要な基礎的な技術を学ぶことを目的として制作。</li>            
+                        <li><strong>課題と学び</strong>: 3D空間での操作感調整、敵の自然な追跡挙動、Safe Areaを考慮したUIレイアウト、タッチ操作の最適化など、モバイル特有の課題を試行錯誤しながら習得。</li>
                     </ul>
 
                     <h2>技術詳細</h2>
                     <p>
-                        VR酔いを最小限に抑えるため、移動システムに工夫を凝らし、特に低スペックなモバイルVR環境でのフレームレート（72fps以上）を厳守しました。
-                        C#で開発された宇宙船のAIは、高度な追尾ロジックを持ち、プレイヤーに挑戦的なゲーム体験を提供します。
+                        スマートフォン向け3Dアクションとして、Unity標準の機能を活用しながら移動・当たり判定・捕食処理などのアクション要素を構築。
+                        直感的なキャラクター操作や Animator を用いたアニメーション遷移を制御し、操作感の向上を図る。
+                        敵キャラクターには追跡・パトロールなどの AI 挙動を実装し、3D 空間での自然な動きを再現。
+                        UI は Safe Area を考慮して配置し、異なる画面サイズの端末でも操作しやすいレイアウトを実現。
                     </p>
                 </div>
                 
                 <div class="project-gallery">
                     <h2>ギャラリー</h2>
-                    <p>開発中のスクリーンショットなどを展示するセクションです。（プレースホルダー画像）</p>
                     <div class="gallery-grid">
                         <!-- 【修正】ギャラリーアイテムにIcon.pngのURLを設定 -->
-                        <div class="gallery-item" style="background-image: url('https://kawakami240743.github.io/Portfolio/Assets/Icon.png'); background-size: cover; background-position: center;"></div>
-                        <div class="gallery-item" style="background-image: url('https://kawakami240743.github.io/Portfolio/Assets/Icon.png'); background-size: cover; background-position: center;"></div>
-                        <div class="gallery-item" style="background-image: url('https://kawakami240743.github.io/Portfolio/Assets/Icon.png'); background-size: cover; background-position: center;"></div>
+                        <div class="gallery-item" style="background-image: url('https://kawakami240743.github.io/Portfolio/Assets/Bite&Panic_01.png'); background-size: cover; background-position: center;"></div>
+                        <div class="gallery-item" style="background-image: url('https://kawakami240743.github.io/Portfolio/Assets/Bite&Panic_02.png'); background-size: cover; background-position: center;"></div>
+                        <div class="gallery-item" style="background-image: url('https://kawakami240743.github.io/Portfolio/Assets/Bite&Panic_03.png'); background-size: cover; background-position: center;"></div>
                         <!-- 複製 -->
-                        <div class="gallery-item" style="background-image: url('https://kawakami240743.github.io/Portfolio/Assets/Icon.png'); background-size: cover; background-position: center;"></div>
-                        <div class="gallery-item" style="background-image: url('https://kawakami240743.github.io/Portfolio/Assets/Icon.png'); background-size: cover; background-position: center;"></div>
-                        <div class="gallery-item" style="background-image: url('https://kawakami240743.github.io/Portfolio/Assets/Icon.png'); background-size: cover; background-position: center;"></div>
+                        <div class="gallery-item" style="background-image: url('https://kawakami240743.github.io/Portfolio/Assets/Bite&Panic_01.png'); background-size: cover; background-position: center;"></div>
+                        <div class="gallery-item" style="background-image: url('https://kawakami240743.github.io/Portfolio/Assets/Bite&Panic_02.png'); background-size: cover; background-position: center;"></div>
+                        <div class="gallery-item" style="background-image: url('https://kawakami240743.github.io/Portfolio/Assets/Bite&Panic_03.png'); background-size: cover; background-position: center;"></div>
                     </div>
                 </div>
                 
