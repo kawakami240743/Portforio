@@ -32,9 +32,9 @@
         <section class="project-detail section">
             <header class="project-header animate-on-scroll">
                 <h1 class="highlight">2DActionゲーム</h1>
-                <p></p>
+                <p>制限時間を生き残り、最後に現れるボスを倒す2Dアクションゲームです。</p>
                 <div class="tags">
-                    <span>Unity</span><span>C#</span><span>HDRP</span><span>Shader Graph</span>
+                    <span>Unity</span><span>C#</span><span>Unity2D</span>
                 </div>
             </header>
 
@@ -42,11 +42,11 @@
                 <!-- メイン動画埋め込み -->
                 <div class="video-container">
                     <iframe 
-                        src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=0&mute=1&controls=1" 
+                        src="https://youtu.be/1KUMznMYHcc?si=oOB07aDwUb53Aqyh"
                         frameborder="0" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                         allowfullscreen
-                        title="サイバーパンク RPG プロモーション動画">
+                        title="2DActionプレイ動画">
                     </iframe>
                 </div>
 
@@ -54,40 +54,39 @@
                 <div class="project-description">
                     <h2>概要と目的</h2>
                     <p>
-                        本プロジェクトは、ハイエンドなグラフィックスと没入感のあるゲームプレイを目指し、UnityのHDRP (High Definition Render Pipeline) を使用して制作した個人開発のRPGです。
-                        プレイヤーは荒廃した未来都市を探索し、複雑なストーリーラインを追いかけます。
+                        本プロジェクトは、テンポの良いアクションと分かりやすいゲーム体験を目指して制作した個人開発の2Dアクションゲームです。
+                        プレイヤーは制限時間内で押し寄せる敵を倒しながら生き残り、最後に出現するボスを撃破することでステージクリアを目指します。
                     </p>
 
                     <h2>主な役割と技術</h2>
                     <ul>
-                        <li>**ゲームプレイプログラミング**: C#とUnityのInput Systemを使用したキャラクター操作、戦闘システムの実装。</li>
-                        <li>**グラフィックス**: HDRPのポストプロセス、ボリューム、ライティング設定による都市の雰囲気作り。</li>
-                        <li>**シェーダー**: Shader Graphを使用したネオンサイン、ホログラムなどの特殊効果の作成。</li>
-                        <li>**課題**: 大規模な都市環境でのパフォーマンス最適化、特に描画負荷の高いHDRP環境でのフレームレート維持に注力しました。</li>
+                        <li><strong>ゲームプレイプログラミング</strong>: Unity2D環境でのキャラクター操作、敵AI、当たり判定など基本的なゲームシステムの実装。</li>
+                        <li><strong>開発環境</strong>: Unity2Dの機能を中心に、2Dアクションゲームとしての基盤を構築</li>
+                        <li><strong>制作背景</strong>: 本作品は「Unityを初めて触って制作したゲーム」であり、基礎的なシステム構築やアセット管理、スクリプト設計など、ゲーム開発の基本プロセスを学ぶことを目的として制作。</li>
+                        <li><strong>課題と学び</strong>: 2D物理挙動や当たり判定の調整、プレイヤー操作の感触改善など、アクションゲームに必要な基礎技術を試行錯誤しながら習得。</li>
                     </ul>
 
                     <h2>技術詳細</h2>
                     <p>
-                        HDRPを利用し、リアルタイムのレイトレーシングや高度な反射設定を導入。Shader Graphを用いて、動的に変化するサイバーパンク特有の環境表現を自作しました。
-                        コードベースはクリーンアーキテクチャを意識し、拡張性と保守性を高めています。
+                        Unity標準の機能を用いて、移動・攻撃・ヒット処理などのアクション挙動を構築。
+                        スクリプトは役割ごとに分割し、プレイヤー、敵、ゲーム管理などの処理をわかりやすく整理することで、初作品でありながらも拡張しやすいプロジェクト構造を目指しています。
                     </p>
                 </div>
                 
                 <!-- ギャラリー/動画セクション -->
                 <div class="project-gallery">
                     <h2>ギャラリー</h2>
-                    <p>開発中のスクリーンショットなどを展示するセクションです。（プレースホルダー画像）</p>
                     
                     <!-- JSによる自動スクロールのターゲット -->
                     <div class="gallery-grid">
                         <!-- 【修正】ギャラリーアイテムにIcon.pngのURLを設定 -->
-                        <div class="gallery-item" style="background-image: url('https://kawakami240743.github.io/Portfolio/Assets/Icon.png'); background-size: cover; background-position: center;"></div>
-                        <div class="gallery-item" style="background-image: url('https://kawakami240743.github.io/Portfolio/Assets/Icon.png'); background-size: cover; background-position: center;"></div>
-                        <div class="gallery-item" style="background-image: url('https://kawakami240743.github.io/Portfolio/Assets/Icon.png'); background-size: cover; background-position: center;"></div>
+                        <div class="gallery-item" style="background-image: url('https://kawakami240743.github.io/Portfolio/Assets/2DAction_01.png'); background-size: cover; background-position: center;"></div>
+                        <div class="gallery-item" style="background-image: url('https://kawakami240743.github.io/Portfolio/Assets/2DAction_02.png'); background-size: cover; background-position: center;"></div>
+                        <div class="gallery-item" style="background-image: url('https://kawakami240743.github.io/Portfolio/Assets/2DAction_03.png'); background-size: cover; background-position: center;"></div>
                         <!-- 複製 -->
-                        <div class="gallery-item" style="background-image: url('https://kawakami240743.github.io/Portfolio/Assets/Icon.png'); background-size: cover; background-position: center;"></div>
-                        <div class="gallery-item" style="background-image: url('https://kawakami240743.github.io/Portfolio/Assets/Icon.png'); background-size: cover; background-position: center;"></div>
-                        <div class="gallery-item" style="background-image: url('https://kawakami240743.github.io/Portfolio/Assets/Icon.png'); background-size: cover; background-position: center;"></div>
+                        <div class="gallery-item" style="background-image: url('https://kawakami240743.github.io/Portfolio/Assets/2DAction_01.png'); background-size: cover; background-position: center;"></div>
+                        <div class="gallery-item" style="background-image: url('https://kawakami240743.github.io/Portfolio/Assets/2DAction_02.png'); background-size: cover; background-position: center;"></div>
+                        <div class="gallery-item" style="background-image: url('https://kawakami240743.github.io/Portfolio/Assets/2DAction_03.png'); background-size: cover; background-position: center;"></div>
                     </div>
                 </div>
                 
@@ -106,8 +105,6 @@
 
     <!-- JavaScriptファイルをGitHub PagesのURLに修正 -->
     <script src="https://kawakami240743.github.io/Portfolio/js/main.js"></script>
-    
-    <!-- 【削除】HTMLに直接記述されていた Firebase Auth のインラインスクリプトを削除しました -->
 </body>
 
 </html>
